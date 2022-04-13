@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: <Widget>[
           const Text(
-            '0123456789Aa가#',
+            '01234567890Aa가#',
             style: TextStyle(
               fontSize: 30.0,
               fontStyle: FontStyle.italic,
