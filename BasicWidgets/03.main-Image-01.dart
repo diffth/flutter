@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:ui';
+import 'dart:ui'; //ui lib import
 
 void main() {
   runApp(const MyApp());
@@ -30,8 +30,11 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   void getWindowSize(){
+    // 앱 화면 논리적 크기
     print(MediaQuery.of(context).size);
+    // 화면 배율
     print(MediaQuery.of(context).devicePixelRatio);
+    // 앱 화면 실제 크기
     print(window.physicalSize);
   }
 
@@ -48,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // 기본 이미지 사용
           Image.asset('assets/images/300x300a.png'),
           Image.asset('assets/images/300x300b.png'),
           Image.asset('assets/images/300x300b.png', width: 150,),
