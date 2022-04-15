@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
               margin: const EdgeInsets.only(left: 10, top: 10),
@@ -78,9 +78,32 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: TextStyle(fontSize: 30, color: Colors.white),
               ),
             ),
+            const SizedBox(height: 5,),
+            Container(
+              width: 100.0,
+              height: 40.0,
+              decoration: const BoxDecoration(
+                image: DecorationImage(image: AssetImage('assets/images/300x100.png')),
+              ),
+              child: TextButton(
+                child: const Text('',),
+                onPressed: () => _onClick(1),
+              ),
+            ),
+            Ink.image(image: const AssetImage('assets/images/300x100.png'),
+              width: 100.0,
+              height: 40.0,
+              child: InkWell(
+                onTap: () => _onClick(2),
+              ),
+            ),
           ],
         ),
       ),
     );
+  }
+
+  void _onClick(int num) {
+    print('Hello~ $num');
   }
 }
