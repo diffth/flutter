@@ -51,7 +51,7 @@ class _Page1State extends State<Page1> {
               },
             ),
             ElevatedButton(
-              child: const Text('3페이지로 교체', style: TextStyle(fontSize: 24),),
+              child: const Text('3페이지 교체', style: TextStyle(fontSize: 24),),
               style: ElevatedButton.styleFrom(
                 primary: Colors.orange,
               ),
@@ -97,7 +97,7 @@ class _Page2State extends State<Page2> {
                 Navigator.pushReplacement(
                   context,
                   PageRouteBuilder(
-                    pageBuilder: (context, anim1, animation2) => const Page3(),
+                    pageBuilder: (context, anim1, anim2) => const Page3(),
                     transitionDuration: const Duration(seconds: 0),
                   ),
                 );
@@ -112,7 +112,7 @@ class _Page2State extends State<Page2> {
                 Navigator.pushReplacement(
                   context,
                   PageRouteBuilder(
-                    pageBuilder: (context, anim1, animaion2) => const Page1(),
+                    pageBuilder: (context, anim1, anim2) => const Page1(),
                     transitionDuration: const Duration(seconds: 0),
                   ),
                 );
@@ -153,7 +153,7 @@ class _Page3State extends State<Page3> {
                 Navigator.pushReplacement(
                   context,
                   PageRouteBuilder(
-                    pageBuilder: (context, anim1, aimation2) => const Page1(),
+                    pageBuilder: (context, anim1, anim2) => const Page1(),
                     transitionDuration: const Duration(seconds: 0),
                   ),
                 );
@@ -168,7 +168,7 @@ class _Page3State extends State<Page3> {
                 Navigator.pushReplacement(
                   context,
                   PageRouteBuilder(
-                    pageBuilder: (context, anim1, animation2) => const Page2(),
+                    pageBuilder: (context, anim1, anim2) => const Page2(),
                     transitionDuration: const Duration(seconds: 0),
                   ),
                 );
