@@ -1,0 +1,4 @@
+dependencies:
+  flutter:
+    sdk: flutter
+  persistent_bottom_nav_bar: any
