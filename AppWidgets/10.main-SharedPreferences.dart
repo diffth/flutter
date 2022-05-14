@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo'),
+      home: const MyHomePage(title: 'Flutter Shared preferences'),
     );
   }
 }
@@ -37,6 +37,13 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     getSharedPreferences();
   }
+  getSharedPreferences() async {
+    prefs = await SharedPreferences.getInstance();
+    setState(() {
+      counter = (prefs.getInt("counter")?? 0); 
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,12 +89,5 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
     );
-  }
-
-  getSharedPreferences() async {
-    prefs = await SharedPreferences.getInstance();
-    setState(() {
-      counter = (prefs.getInt("counter")?? 0); 
-    });
   }
 }
