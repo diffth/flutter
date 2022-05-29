@@ -33,10 +33,10 @@ class _MyHomePageState extends State<MyHomePage> {
   String name = '';
 
   FirebaseOptions get firebaseOptions => const FirebaseOptions(
-    appId: '1:.....:ios:748c9d85566ac54cdbe52b',          // GOOGLE_APP_ID
-    apiKey: '...._.....Y3Mniijt9Ec',                      // API_KEY
-    projectId: 'flutterex-d77ed',                         // PROJECT_ID
-    messagingSenderId: '916500597554',                    // GCM_SENDER_ID
+    appId: '1:.....:ios:748c9d85566ac54cdbe52b',          // YOU ARE GOOGLE_APP_ID
+    apiKey: '...._.....Y3Mniijt9Ec',                      // YOU ARE API_KEY
+    projectId: 'flutterex-d77ed',                         // YOU ARE PROJECT_ID
+    messagingSenderId: '916500597554',                    // YOU ARE GCM_SENDER_ID
   );
 
   @override
